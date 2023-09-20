@@ -1,0 +1,54 @@
+<!-- Description
+Create a html page having some paragraph tag and some h2,h3 tags with some text inside them along with a div tag having id as ‘div’.
+1.All h2,h3 have same  value of  className attribute i.e, “header”
+2.All paragraphs tag have className attribute as “paragraph”.
+3.Now print the content of all paragraph tag in the browser console.
+4.And add a new h1 inside the div tag in html using js code.
+5.And also change the text of all header tags  to “HEADINGS” and paragraph tags to “PARAGRAPH”. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 class="header">Heading-h2</h2>
+    <h3 class="header">Heading-h3</h3>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat molestiae distinctio perspiciatis nostrum dolorem eum explicabo vitae! Maxime necessitatibus alias dolorum fugit quos esse enim iusto laborum repudiandae suscipit?
+    </p>
+    <p class="paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam provident rem impedit, repudiandae nesciunt ipsam, a perferendis sequi vel, expedita perspiciatis. Dolores, dicta cupiditate? Doloribus eaque harum autem reiciendis nam.
+    </p>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit deleniti possimus molestias suscipit dolorum, hic tempore molestiae consectetur tenetur quidem laboriosam sint distinctio, facere deserunt ea nihil eos, velit enim.
+    </p>
+    <div id="div"></div>
+
+<script>
+    var x=document.getElementsByClassName('paragraph');
+    var y=document.getElementsByClassName('header');
+    var z=document.getElementById('div');
+    console.log(x);
+    for(var i=0;i<x.length;i++){
+        console.log(x[i]);
+        x[i].innerText="PARAGRAPH";
+    
+    }
+
+    for(var i=0;i<y.length;i++){
+        console.log(y[i]);
+        y[i].innerText="HEADER";
+     
+            
+
+    
+    }
+    div.innerHTML='<h1>This heading is inserted using JS CODE</h2>';
+
+</script> 
+</body>
+</html>

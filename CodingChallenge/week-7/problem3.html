@@ -1,0 +1,25 @@
+<!-- Description
+Initially you have a empty html page having nothing inside its body-
+
+Using JS add a h1 tag having id as ‘header’ in the html with some dummy data inside it  using document.documentElement.innerHTML object .
+Now change the color of text to yellow of the above inserted h1 tag using js code.
+Also change the fontSize of the header text to 78px. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    document.documentElement.innerHTML='<h1 id=header> This is heading added in empty html page using JS</h1>';
+    var h1=document.getElementById('header');
+    h1.style.color='Yellow';
+    h1.style.fontSize='78px';
+
+    </script>
+</html>

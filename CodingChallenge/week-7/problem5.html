@@ -1,0 +1,42 @@
+<!-- Description
+Create a html page having a button element with id as ‘btn’ inside the  body of the page.
+
+Disable the context menu that appears when we right click on the above button tag.
+Create a paragraph tag on the html page with id ‘message’
+The p tag with id ‘message ‘ will be updated with the  mouse button name which we clicked on the above button tag.
+Use onmousedown property of button object in js.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Button</button>
+    <p id="message"></p>
+</body>
+<script>
+    let btn = document.querySelector('#btn');
+    let msg = document.querySelector('#message');
+    
+    btn.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        });
+        btn.onmousedown=function(event){
+            switch (event.button) {
+                case 0:
+                    msg.textContent = 'Left mouse button clicked.';
+                    break;
+                case 1:
+                    msg.textContent = 'Middle mouse button clicked.';
+                    break;
+                case 2:
+                    msg.textContent = 'Right mouse button clicked.';
+                    break;
+                default:msg.textContent = `Unknown mouse button code:${event.button}`;
+                }
+            }
+</script>
+</html>

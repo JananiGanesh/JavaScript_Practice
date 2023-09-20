@@ -1,0 +1,31 @@
+ <!-- Description
+Create a Html page having two paragraph tag and one H2 tag.Place some dummy data in all the tags.
+
+Now using the reference to these elements in html via JS code print the H2 tag and the count of paragraph tag present in html code on browser console using getElementByID and getElementsByClassName methods respectively. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading2">Heading</h2>
+    <p class="paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, iste odit et perspiciatis voluptatibus nostrum dignissimos officiis ad ratione quod, cupiditate fugit aliquid, eligendi repellendus voluptatem quos velit quasi provident!
+    </p>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora possimus animi quaerat rem recusandae eaque deleniti voluptas quam dignissimos. Quo iure eius unde rerum aut esse, repudiandae aliquid ab culpa.
+    </p>
+    
+
+    <script>
+       var x=document.getElementById('heading2');
+var y=document.getElementsByClassName('paragraph');
+console.log("The Header content is: ",x);
+console.log("The paragraph tag in the HTML page are: ",y.length); 
+    </script>
+</body>
+</html>
